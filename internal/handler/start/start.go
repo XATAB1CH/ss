@@ -11,7 +11,7 @@ func HandleStart(c tg.Context) error {
 
 	// Создание меню и веб-приложения
 	menu := &tg.ReplyMarkup{ResizeKeyboard: true}
-	webApp := &tg.WebApp{URL: "https://www.google.ru/"}
+	webApp := &tg.WebApp{URL: "https://localhost:3000/"}
 
 	var appButton, channelButton tg.Btn
 	var text string

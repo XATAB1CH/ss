@@ -1,7 +1,6 @@
 package app
 
 import (
-	"ss/internal/handler"
 	"time"
 
 	tg "gopkg.in/telebot.v4"
@@ -25,9 +24,6 @@ func NewBot() (*Bot, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	// Хендлер команды /start
-	bot.Handle("/start", handler.HandleStart)
 
 	return &Bot{
 		telegramBot: bot,
