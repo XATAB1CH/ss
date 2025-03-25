@@ -1,0 +1,59 @@
+/* Шрифты */
+@font-face {
+  font-family: 'Lack';
+  src: url('./assets/fonts/Lack-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стили для html и body */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+}
+
+/* Стили для контейнера */
+.container {
+  position: relative;
+  width: 100%; /* Ширина на весь экран */
+  min-height: 100vh; /* Высота на весь экран */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #131313; /* Темный фон контейнера */
+  color: #ffffff; /* Белый текст */
+  padding-bottom: 80px; /* Отступ снизу для футера */
+}
+
+.container-top {
+  position: relative;
+  width: 100%; /* Ширина на весь экран */
+  min-height: 30px; /* Высота на весь экран */
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff; /* Белый текст */
+}
+
+/* Стили для скроллбара в WebKit-браузерах (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+html::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Темный фон трека */
+}
+html::-webkit-scrollbar-thumb {
+  background: #444; /* Темный цвет ползунка */
+  border-radius: 6px; /* Закругленные углы ползунка */
+  border: 3px solid #1e1e1e; /* Отступ вокруг ползунка */
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Цвет ползунка при наведении */
+}
+html {
+  scrollbar-width: thin; /* Тонкий скроллбар */
+  scrollbar-color: #444 #1e1e1e; /* Цвет ползунка и трека */
+}

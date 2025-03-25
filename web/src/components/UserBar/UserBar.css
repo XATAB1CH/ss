@@ -1,0 +1,22 @@
+.user-bar {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #262626; /* Темный фон плашки */
+    border-bottom: 1px solid #262626; /* Темная рамка снизу */
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Круглая аватарка */
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    color: #D493FF; /* Белый текст */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }

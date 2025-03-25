@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  bottom: 20px; /* Отступ от нижнего края */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Подстраивается под экран */
+  max-width: 500px; /* Максимальная ширина */
+  background-color: #262626; /* Темный фон */
+  border-radius: 50px; /* Округление */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень */
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  flex: 1; /* Равномерное распределение пространства */
+  margin: 0 5px; /* Небольшой отступ между кнопками */
+  transition: opacity 0.3s ease; /* Плавное затемнение */
+  font-family: 'Lack', sans-serif;
+}
+
+.navbar button.active {
+  opacity: 1; /* Активный элемент - полная видимость */
+}
+
+.navbar button.inactive {
+  opacity: 0.5; /* Неактивный элемент - затемнение */
+}
+
+.navbar button img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}

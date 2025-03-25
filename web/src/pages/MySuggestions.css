@@ -1,0 +1,37 @@
+.suggestions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .create-suggestion-button {
+    position: fixed;  /* Закрепляем кнопку на экране */
+    bottom: 80px;     /* Отступ от нижней границы */
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #b57aff, #d687ff); /* Градиент */
+    color: #000000;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 50px;
+    width: 40%;
+    max-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .create-suggestion-button:hover {
+    transform: translateX(-50%) scale(1.05);
+  }
+  
+  .create-suggestion-button:active {
+    transform: translateX(-50%) scale(0.95);
+  }
