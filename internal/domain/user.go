@@ -1,16 +1,15 @@
 package domain
 
 type User struct {
-	Id   int64
-	tgId int64
-	tgName string
-	timeLastActivity int64
+	ID               int64
+	TgID             int64
+	TgName           string
+	TimeLastActivity int64
 
-	age int16
-	geo string
-	gender string
-	genderSearch string
-	photoUrl string
-	description string
+	Age          int16
+	Geo          string
+	Gender       string
+	GenderSearch string
+	PhotoUrl     string
+	Description  string
 }
-

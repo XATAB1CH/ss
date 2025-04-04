@@ -7,8 +7,11 @@ import (
 	"os"
 	"os/signal"
 	"ss/internal/app"
+	"ss/internal/config"
 	"sync"
 	"time"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -18,7 +21,12 @@ func main() {
 	var wg *sync.WaitGroup = new(sync.WaitGroup)
 	wg.Add(2)
 
-	app := app.NewApp(ctx, wg)
+	if err := godotenv.Load(); err != nil {
+		log.Fatal("no .env files found")
+	}
+	conf := config.NewAppConf()
+
+	app := app.NewApp(ctx, wg, conf)
 	app.RunApp()
 
 	defer func(c context.CancelFunc) {
